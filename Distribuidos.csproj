@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>280A2284-83E1-472F-9577-E45434154126</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Distribuidos</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Data" />
+    <Reference Include="FBSUtilidades" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Distribuidos.Cajas\CampoFormulario.cs" />
+    <Compile Include="Distribuidos.Cajas\CodigoImpuesto.cs" />
+    <Compile Include="Distribuidos.Cajas\CodigoImpuestoMes.cs" />
+    <Compile Include="Distribuidos.Cajas\Contribuyente.cs" />
+    <Compile Include="Distribuidos.Cajas\TipoFormulario.cs" />
+    <Compile Include="Distribuidos.Cajas\TipoFormularioCampoFormulario.cs" />
+    <Compile Include="Distribuidos.Cajas\TipoFormularioCampoFormulario_Alerta.cs" />
+    <Compile Include="Distribuidos.Cajas\TipoFormularioCodigoImpuesto.cs" />
+    <Compile Include="Distribuidos.Cajas\TipoFormularioTipoIdentificacion.cs" />
+    <Compile Include="Distribuidos.Cartera\EstadoPrestamo.cs" />
+    <Compile Include="Distribuidos.Cartera\EstadoPrestamoComponente_Cartera.cs" />
+    <Compile Include="Distribuidos.Clientes\CalificacionInterna.cs" />
+    <Compile Include="Distribuidos.Clientes\SectorEconomico.cs" />
+    <Compile Include="Distribuidos.Clientes\TipoVinculacion.cs" />
+    <Compile Include="Distribuidos.Contabilidades\ArchivosAnexoTransaccional.cs" />
+    <Compile Include="Distribuidos.Credito\CalificacionContable.cs" />
+    <Compile Include="Distribuidos.Credito\CICN.cs" />
+    <Compile Include="Distribuidos.Credito\CondicionTablaAmortizacion.cs" />
+    <Compile Include="Distribuidos.Credito\DestinoCredito.cs" />
+    <Compile Include="Distribuidos.Credito\DestinoFinanciero.cs" />
+    <Compile Include="Distribuidos.Credito\EstadoSolicitud.cs" />
+    <Compile Include="Distribuidos.Credito\EstadoSolicitudEtapa.cs" />
+    <Compile Include="Distribuidos.Credito\FrecuenciaPago.cs" />
+    <Compile Include="Distribuidos.Credito\MecanismoInstrumentacionCredito.cs" />
+    <Compile Include="Distribuidos.Credito\OrigenRecurso.cs" />
+    <Compile Include="Distribuidos.Credito\SectorEconomicoCredito.cs" />
+    <Compile Include="Distribuidos.Credito\SegmentoInterno.cs" />
+    <Compile Include="Distribuidos.Credito\SubCalificacionContable.cs" />
+    <Compile Include="Distribuidos.Credito\TipoGarantia.cs" />
+    <Compile Include="Distribuidos.Credito\TipoGrupoPersonas_Parametro.cs" />
+    <Compile Include="Distribuidos.Credito\TipoItemScoring.cs" />
+    <Compile Include="Distribuidos.Credito\TipoPrestamo.cs" />
+    <Compile Include="Distribuidos.Credito\TipoPrestamoCondicionTablaAmortizacion.cs" />
+    <Compile Include="Distribuidos.Credito\TipoPrestamoEtapa.cs" />
+    <Compile Include="Distribuidos.Credito\TipoPrestamoFrecuenciaPago.cs" />
+    <Compile Include="Distribuidos.Credito\TipoPrestamoSegmentoInterno.cs" />
+    <Compile Include="Distribuidos.Credito\TipoPrestamoTipoGarantia.cs" />
+    <Compile Include="Distribuidos.Generales\Banco.cs" />
+    <Compile Include="Distribuidos.Generales\BancoEmpresa.cs" />
+    <Compile Include="Distribuidos.Generales\Empresa.cs" />
+    <Compile Include="Distribuidos.Generales\EmpresaTelefonica.cs" />
+    <Compile Include="Distribuidos.Generales\Moneda.cs" />
+    <Compile Include="Distribuidos.Generales\Pais.cs" />
+    <Compile Include="Distribuidos.Generales\TipoBanco.cs" />
+    <Compile Include="Distribuidos.Generales\TipoTelefono.cs" />
+    <Compile Include="Distribuidos.NegociosFinancieros\Producto.cs" />
+    <Compile Include="Distribuidos.NegociosFinancieros\TipoProducto.cs" />
+    <Compile Include="Distribuidos.NegociosFinancieros\Transaccion.cs" />
+    <Compile Include="Distribuidos.NegociosFinancieros\Transaccion_Cajas.cs" />
+    <Compile Include="Distribuidos.NegociosFinancieros\Transaccion_Plazo.cs" />
+    <Compile Include="Distribuidos.NegociosFinancieros\Transaccion_Vista.cs" />
+    <Compile Include="Distribuidos.Personas\EstadoCivil.cs" />
+    <Compile Include="Distribuidos.Personas\Profesion.cs" />
+    <Compile Include="Distribuidos.Personas\RangoEdad.cs" />
+    <Compile Include="Distribuidos.Personas\TipoCuentaReferenciaBancaria.cs" />
+    <Compile Include="Distribuidos.Personas\TipoEducacion.cs" />
+    <Compile Include="Distribuidos.Personas\TipoIdentificacion.cs" />
+    <Compile Include="Distribuidos.Personas\TipoIdentificacion_Metodo.cs" />
+    <Compile Include="Distribuidos.Personas\TipoVivienda.cs" />
+    <Compile Include="Distribuidos.Workflow\Etapa.cs" />
+    <Compile Include="Distribuidos.Workflow\EtapaRetorno.cs" />
+    <Compile Include="Distribuidos\BaseDatos.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>F64ED291-760D-427B-9F7A-43148D6FAECB</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>FBSShell</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Utils.v11.2" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="DevExpress.XtraBars.v11.2" />
+    <Reference Include="System" />
+    <Reference Include="Microsoft.Practices.CompositeUI.WinForms" />
+    <Reference Include="Microsoft.Practices.CompositeUI" />
+    <Reference Include="DevExpress.XtraEditors.v11.2" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="FBSProxies.SeguridadesFBS" />
+    <Reference Include="FBSProxies.Logs" />
+    <Reference Include="FBSComun" />
+    <Reference Include="DevExpress.XtraNavBar.v11.2" />
+    <Reference Include="FBSProxies.Seguridades" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="FBSProxies" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Web" />
+    <Reference Include="LogicStudio.Biometrika.Gateway" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="Distribuidos" />
+    <Reference Include="FBSProxies.Nomina" />
+    <Reference Include="CaptacionesVista" />
+    <Reference Include="Seguridades" />
+    <Reference Include="Cartera" />
+    <Reference Include="CierresFinancieros" />
+    <Reference Include="Clientes" />
+    <Reference Include="Cobranzas" />
+    <Reference Include="Contabilidades" />
+    <Reference Include="Credito" />
+    <Reference Include="Generales" />
+    <Reference Include="Logs" />
+    <Reference Include="NegociosFinancieros" />
+    <Reference Include="Organizaciones" />
+    <Reference Include="Personas" />
+    <Reference Include="Portafolio" />
+    <Reference Include="SeguridadesFBS" />
+    <Reference Include="TransaccionesEnLinea" />
+    <Reference Include="WorkFlow" />
+    <Reference Include="System" />
+    <Reference Include="DevExpress.Data.v11.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FBSShell.Comun\ConfiguracionForm.cs" />
+    <Compile Include="FBSShell.Comun\OpcionesSistema.cs" />
+    <Compile Include="FBSShell.Properties\Resources.cs" />
+    <Compile Include="FBSShell.Properties\Settings.cs" />
+    <Compile Include="FBSShell\FBSApplication.cs" />
+    <Compile Include="FBSShell\FBSForm1.cs" />
+    <Compile Include="FBSShell\IngresoInactividadForm.cs" />
+    <Compile Include="FBSShell\IngresoInactividadForm1.cs" />
+    <Compile Include="FBSShell\LoginForm.cs" />
+    <Compile Include="FBSShell\MensajesVista.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FBSShell.Comun\ConfiguracionForm.resources" />
+    <EmbeddedResource Include="FBSShell.Properties\Resources.resources" />
+    <EmbeddedResource Include="FBSShell\FBSForm1.resources" />
+    <EmbeddedResource Include="FBSShell\IngresoInactividadForm.resources" />
+    <EmbeddedResource Include="FBSShell\IngresoInactividadForm1.resources" />
+    <EmbeddedResource Include="FBSShell\MensajesVista.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

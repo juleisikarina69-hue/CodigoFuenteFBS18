@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>4867D294-EFB3-45C0-BB69-BFCA0BD64BDF</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>FBSProxies.CierresFinancieros</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="WCFExtras" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FBSProxies.CierresFinancieros.ClienteFechaProceso\CalculoFinDeDiaGlobalCompletedEventArgs.cs" />
+    <Compile Include="FBSProxies.CierresFinancieros.ClienteFechaProceso\ClienteFechaProcesoWSClient.cs" />
+    <Compile Include="FBSProxies.CierresFinancieros.ClienteFechaProceso\DevuelveInformacionCalculoFinDeDiaGlobalCompletedEventArgs.cs" />
+    <Compile Include="FBSProxies.CierresFinancieros.ClienteFechaProceso\IClienteFechaProcesoWS.cs" />
+    <Compile Include="FBSProxies.CierresFinancieros.ClienteFechaProceso\IClienteFechaProcesoWSChannel.cs" />
+    <Compile Include="FBSProxies.CierresFinancieros.ClienteFechaProceso\MensajeColaMS.cs" />
+    <Compile Include="FBSProxies.CierresFinancieros.ClienteFechaProceso\MensajeColaMSLista.cs" />
+    <Compile Include="FBSProxies.CierresFinancieros.ClienteFechaProceso\MessageError.cs" />
+    <Compile Include="FBSProxies.CierresFinancieros.ClienteFechaProceso\MessageSettings.cs" />
+    <Compile Include="FBSProxies.CierresFinancieros.Properties\Settings.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

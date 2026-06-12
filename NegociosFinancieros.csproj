@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>6EA40088-30F8-4BA3-AE32-8474E137DA32</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>NegociosFinancieros</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="FBSComun" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Microsoft.Practices.CompositeUI" />
+    <Reference Include="CustomValidation" />
+    <Reference Include="Microsoft.ReportViewer.WinForms" />
+    <Reference Include="FBSProxies.NegociosFinancieros" />
+    <Reference Include="FBSProxies.CaptacionesVista" />
+    <Reference Include="FBSProxies.TransaccionesEnLinea" />
+    <Reference Include="FBSProxies.Estructuras" />
+    <Reference Include="Clientes" />
+    <Reference Include="FBSProxies.Cajas" />
+    <Reference Include="FBSProxies" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="FBSProxies.Utilidades" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="FBSProxies.Seguridades" />
+    <Reference Include="FBSProxies.Generales" />
+    <Reference Include="Microsoft.Practices.CompositeUI.WinForms" />
+    <Reference Include="Distribuidos" />
+    <Reference Include="Generales" />
+    <Reference Include="FBSUtilidades" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NegociosFinancieros.Busqueda\CuentaCertificadoObligatorioForm.cs" />
+    <Compile Include="NegociosFinancieros.Busqueda\CuentaCertificadoObligatorioFormPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Busqueda\CuentaForm.cs" />
+    <Compile Include="NegociosFinancieros.Busqueda\CuentaFormPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Busqueda\CuentaTransaccionCertificadoForm.cs" />
+    <Compile Include="NegociosFinancieros.Busqueda\CuentaTransaccionCertificadoFormPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Busqueda\ImagenesPersona_Form.cs" />
+    <Compile Include="NegociosFinancieros.Busqueda\PrestamoTransaccionCertificadoForm.cs" />
+    <Compile Include="NegociosFinancieros.Busqueda\PrestamoTransaccionCertificadoFormPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Busqueda\TransaccionForm.cs" />
+    <Compile Include="NegociosFinancieros.Busqueda\TransaccionFormPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Constantes\EventNames.cs" />
+    <Compile Include="NegociosFinancieros.Consulta\Canal_ListaMantenimientoPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Consulta\Canal_ListaVista.cs" />
+    <Compile Include="NegociosFinancieros.Consulta\EmpresaParametro_ListaPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Consulta\EmpresaParametro_ListaVista.cs" />
+    <Compile Include="NegociosFinancieros.Consulta\General_ListaMantenimientoPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Consulta\General_ListaProcesaTabPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Consulta\PapeletasRestringidas_ListaMantenimientoPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Consulta\PapeletasRestringidas_ListaVista.cs" />
+    <Compile Include="NegociosFinancieros.Consulta\Producto_ListaMantenimientoPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Consulta\Producto_ListaVista.cs" />
+    <Compile Include="NegociosFinancieros.Consulta\Producto_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Consulta\TipoProducto_ListaMantenimientoPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Consulta\TipoProducto_ListaVista.cs" />
+    <Compile Include="NegociosFinancieros.Consulta\TransaccionSolicitudActivas_ListaPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Consulta\TransaccionSolicitudActivas_ListaVista.cs" />
+    <Compile Include="NegociosFinancieros.Consulta\TransaccionSolicitud_ListaPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Consulta\TransaccionSolicitud_ListaVista.cs" />
+    <Compile Include="NegociosFinancieros.Consulta\Transaccion_ListaMantenimientoPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Consulta\Transaccion_ListaVista.cs" />
+    <Compile Include="NegociosFinancieros.Consulta\Transaccion_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Documentos\Vista_SolicitudTransaccion_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Canal_EdicionPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Canal_NuevoPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Canal_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\ComponenteTipoMovimiento_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\ComponenteTipoMovimiento_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\EmpresaParametroConsep_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\EmpresaParametroConsep_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\EmpresaParametroTasasReferenciales_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\EmpresaParametroTasasReferenciales_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\GeneraEstructurasUIF_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\GeneraEstructurasUIF_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\GeneraEstructuras_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\GeneraEstructuras_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\General_ListaPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\PapeletasRestringidas_EdicionPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\PapeletasRestringidas_NuevoPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\PapeletasRestringidas_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Producto_Caja_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Producto_Caja_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Producto_Cartera_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Producto_Cartera_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Producto_MantenimientoEdicionPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Producto_MantenimientoNuevoPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Producto_MantenimientoVista.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Producto_Plazo_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Producto_Plazo_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Producto_Vista_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Producto_Vista_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\SolicitudTransaccionAprobacion_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\SolicitudTransaccionAprobacion_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\TipoProducto_EdicionPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\TipoProducto_NuevoPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\TipoProducto_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\TransaccionAsignarCanal_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\TransaccionAsignarCanal_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\TransaccionComponente_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\TransaccionComponente_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\TransaccionReverso_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\TransaccionReverso_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\TransaccionRol_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\TransaccionRol_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\TransaccionTipoMovimiento_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\TransaccionTipoMovimiento_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Transaccion_Cajas_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Transaccion_Cajas_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Transaccion_Cartera_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Transaccion_Cartera_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Transaccion_ContrapartidaComplementaria_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Transaccion_ContrapartidaComplementaria_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Transaccion_MantenimientoEdicionPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Transaccion_MantenimientoNuevoPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Transaccion_MantenimientoVista.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Transaccion_Plazo_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Transaccion_Plazo_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Transaccion_Vista_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Mantenimiento\Transaccion_Vista_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Properties\Resources.cs" />
+    <Compile Include="NegociosFinancieros.Properties\Settings.cs" />
+    <Compile Include="NegociosFinancieros.Transaccion\ChequesControl.cs" />
+    <Compile Include="NegociosFinancieros.Transaccion\DatosParaProcesaSolicitudTransaccion.cs" />
+    <Compile Include="NegociosFinancieros.Transaccion\DatosParaProcesaSolicitudTransaccionContrapartida.cs" />
+    <Compile Include="NegociosFinancieros.Transaccion\DenominacionControl.cs" />
+    <Compile Include="NegociosFinancieros.Transaccion\Detalle_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Transaccion\Detalle_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Transaccion\TipoProductoTransaccionPresentador.cs" />
+    <Compile Include="NegociosFinancieros.Transaccion\TipoProductoTransaccionVista.cs" />
+    <Compile Include="NegociosFinancieros.Transaccion\TransaccionCajas_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Transaccion\TransaccionSolicitud_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Transaccion\TransaccionSolicitud_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Transaccion\Transaccion_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Transaccion\Transaccion_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Transaccion\ValoresPortafolio_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Transaccion\ValoresPortafolio_Vista.cs" />
+    <Compile Include="NegociosFinancieros.Transaccion\Valores_Presentador.cs" />
+    <Compile Include="NegociosFinancieros.Transaccion\Valores_Vista.cs" />
+    <Compile Include="NegociosFinancieros.WorkItems\GeneraEstructura.cs" />
+    <Compile Include="NegociosFinancieros.WorkItems\GeneraEstructuraUIF.cs" />
+    <Compile Include="NegociosFinancieros.WorkItems\Instanciador.cs" />
+    <Compile Include="NegociosFinancieros.WorkItems\InstanciadorTab.cs" />
+    <Compile Include="NegociosFinancieros.WorkItems\ListaConsultaDetalle.cs" />
+    <Compile Include="NegociosFinancieros.WorkItems\ListaConsultaDetalleTab.cs" />
+    <Compile Include="NegociosFinancieros.WorkItems\ListaMantenimientoDetalle.cs" />
+    <Compile Include="NegociosFinancieros.WorkItems\ProductoMantenimiento.cs" />
+    <Compile Include="NegociosFinancieros.WorkItems\TransaccionMantenimiento.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NegociosFinancieros.Busqueda\CuentaCertificadoObligatorioForm.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Busqueda\CuentaForm.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Busqueda\CuentaTransaccionCertificadoForm.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Busqueda\ImagenesPersona_Form.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Busqueda\PrestamoTransaccionCertificadoForm.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Busqueda\TransaccionForm.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Consulta\Canal_ListaVista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Consulta\EmpresaParametro_ListaVista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Consulta\PapeletasRestringidas_ListaVista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Consulta\Producto_ListaVista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Consulta\TipoProducto_ListaVista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Consulta\TransaccionSolicitudActivas_ListaVista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Consulta\TransaccionSolicitud_ListaVista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Consulta\Transaccion_ListaVista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Documentos\Vista_SolicitudTransaccionReport.rdlc" />
+    <EmbeddedResource Include="NegociosFinancieros.Documentos\Vista_SolicitudTransaccion_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Mantenimiento\Canal_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Mantenimiento\ComponenteTipoMovimiento_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Mantenimiento\EmpresaParametroConsep_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Mantenimiento\EmpresaParametroTasasReferenciales_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Mantenimiento\GeneraEstructurasUIF_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Mantenimiento\GeneraEstructuras_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Mantenimiento\PapeletasRestringidas_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Mantenimiento\Producto_Caja_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Mantenimiento\Producto_Cartera_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Mantenimiento\Producto_MantenimientoVista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Mantenimiento\Producto_Plazo_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Mantenimiento\Producto_Vista_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Mantenimiento\SolicitudTransaccionAprobacion_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Mantenimiento\TipoProducto_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Mantenimiento\TransaccionAsignarCanal_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Mantenimiento\TransaccionComponente_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Mantenimiento\TransaccionReverso_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Mantenimiento\TransaccionRol_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Mantenimiento\TransaccionTipoMovimiento_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Mantenimiento\Transaccion_Cajas_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Mantenimiento\Transaccion_Cartera_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Mantenimiento\Transaccion_ContrapartidaComplementaria_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Mantenimiento\Transaccion_MantenimientoVista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Mantenimiento\Transaccion_Plazo_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Mantenimiento\Transaccion_Vista_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Properties\Resources.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Transaccion\ChequesControl.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Transaccion\DenominacionControl.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Transaccion\Detalle_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Transaccion\TipoProductoTransaccionVista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Transaccion\TransaccionSolicitud_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Transaccion\Transaccion_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Transaccion\ValoresPortafolio_Vista.resources" />
+    <EmbeddedResource Include="NegociosFinancieros.Transaccion\Valores_Vista.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

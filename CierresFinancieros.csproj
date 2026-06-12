@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>5F9C4950-DD96-4885-AFF5-F477F2A20040</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>CierresFinancieros</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FBSComun" />
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Microsoft.Practices.CompositeUI" />
+    <Reference Include="FBSProxies.Migracion" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="FBSProxies.CierresFinancieros" />
+    <Reference Include="FBSProxies" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="FBSProxies.Generales" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CierresFinancieros.Proceso\ProcesaCierreDia_Presentador.cs" />
+    <Compile Include="CierresFinancieros.Proceso\ProcesaMigracion_Presentador.cs" />
+    <Compile Include="CierresFinancieros.Proceso\ProcesoEnLoteConOpciones_Vista.cs" />
+    <Compile Include="CierresFinancieros.Proceso\ProcesoEnLote_Vista.cs" />
+    <Compile Include="CierresFinancieros.Properties\Resources.cs" />
+    <Compile Include="CierresFinancieros.Properties\Settings.cs" />
+    <Compile Include="CierresFinancieros.WorkItems\Instanciador.cs" />
+    <Compile Include="CierresFinancieros.WorkItems\ProcesoEnLote.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CierresFinancieros.Proceso\ProcesoEnLoteConOpciones_Vista.resources" />
+    <EmbeddedResource Include="CierresFinancieros.Proceso\ProcesoEnLote_Vista.resources" />
+    <EmbeddedResource Include="CierresFinancieros.Properties\Resources.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>D535DD92-8539-4CA4-BD2C-EAC2E4602064</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>FBSComun</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Microsoft.Practices.CompositeUI" />
+    <Reference Include="System" />
+    <Reference Include="Microsoft.Practices.CompositeUI.WinForms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Interop.SpeechLib" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FBSComun.Busqueda\BaseBusquedaForm.cs" />
+    <Compile Include="FBSComun.Busqueda\BaseBusquedaFormPresentador.cs" />
+    <Compile Include="FBSComun.Busqueda\BaseBusquedaPresentador.cs" />
+    <Compile Include="FBSComun.Busqueda\BaseBusquedaVista.cs" />
+    <Compile Include="FBSComun.Busqueda\BaseParaBusquedaPresentador.cs" />
+    <Compile Include="FBSComun.Busqueda\BaseParaBusquedaVista.cs" />
+    <Compile Include="FBSComun.Busqueda\ColorControl.cs" />
+    <Compile Include="FBSComun.Busqueda\ImagenesControl.cs" />
+    <Compile Include="FBSComun.Busqueda\ListaImagenesForm.cs" />
+    <Compile Include="FBSComun.Constantes\StateNames.cs" />
+    <Compile Include="FBSComun.Constantes\WorkspaceNames.cs" />
+    <Compile Include="FBSComun.Consulta\BaseDetallePresentador.cs" />
+    <Compile Include="FBSComun.Consulta\BaseDetalleVista.cs" />
+    <Compile Include="FBSComun.Consulta\BaseDetalleWorkItem.cs" />
+    <Compile Include="FBSComun.Consulta\BaseListaPresentador.cs" />
+    <Compile Include="FBSComun.Consulta\BaseListaVista.cs" />
+    <Compile Include="FBSComun.Consulta\GeneralListaDetallePresentador.cs" />
+    <Compile Include="FBSComun.Consulta\GeneralListaDetalleVista.cs" />
+    <Compile Include="FBSComun.Consulta\GeneralListaDetalleWorkItem.cs" />
+    <Compile Include="FBSComun.Consulta\GeneralListaModificadoVista.cs" />
+    <Compile Include="FBSComun.Consulta\GeneralListaPresentador.cs" />
+    <Compile Include="FBSComun.Consulta\GeneralListaVista.cs" />
+    <Compile Include="FBSComun.Consulta\GeneralListaWorkItem.cs" />
+    <Compile Include="FBSComun.Consulta\PaginaLista.cs" />
+    <Compile Include="FBSComun.Controles\MaskedComboBox.cs" />
+    <Compile Include="FBSComun.Controles\MaskType.cs" />
+    <Compile Include="FBSComun.Controles\Recognizer.cs" />
+    <Compile Include="FBSComun.Controles\SpeechCheckBox.cs" />
+    <Compile Include="FBSComun.Controles\TranformsText.cs" />
+    <Compile Include="FBSComun.Mantenimiento\BaseListaMantenimientoPresentador.cs" />
+    <Compile Include="FBSComun.Mantenimiento\BaseListaPresentador.cs" />
+    <Compile Include="FBSComun.Mantenimiento\BaseListaVista.cs" />
+    <Compile Include="FBSComun.Mantenimiento\BaseMantenimientoNavegacionPresentador.cs" />
+    <Compile Include="FBSComun.Mantenimiento\BaseMantenimientoNavegacionVista.cs" />
+    <Compile Include="FBSComun.Mantenimiento\BaseMantenimientoPresentador.cs" />
+    <Compile Include="FBSComun.Mantenimiento\BaseMantenimientoVista.cs" />
+    <Compile Include="FBSComun.Mantenimiento\GeneralListaDetalleEspecificoTabPresentador.cs" />
+    <Compile Include="FBSComun.Mantenimiento\GeneralListaDetalleEspecificoTabVista.cs" />
+    <Compile Include="FBSComun.Mantenimiento\GeneralListaDetalleEspecificoVista.cs" />
+    <Compile Include="FBSComun.Mantenimiento\GeneralListaDetalleEspecificoWorkItem.cs" />
+    <Compile Include="FBSComun.Mantenimiento\GeneralListaMantenimientoPresentador.cs" />
+    <Compile Include="FBSComun.Mantenimiento\GeneralListaMantenimientoVista.cs" />
+    <Compile Include="FBSComun.Mantenimiento\GeneralListaMantenimientoWorkItem.cs" />
+    <Compile Include="FBSComun.Mantenimiento\GeneralMantenimientoPresentador.cs" />
+    <Compile Include="FBSComun.Mantenimiento\GeneralMantenimientoTabPresentador.cs" />
+    <Compile Include="FBSComun.Mantenimiento\GeneralMantenimientoTabVista.cs" />
+    <Compile Include="FBSComun.Mantenimiento\GeneralMantenimientoTabWorkItem.cs" />
+    <Compile Include="FBSComun.Mantenimiento\GeneralMantenimientoVista.cs" />
+    <Compile Include="FBSComun.Mantenimiento\GeneralMantenimientoWorkItem.cs" />
+    <Compile Include="FBSComun.Mantenimiento\PaginaLista.cs" />
+    <Compile Include="FBSComun.Proceso\BaseProcesoPresentador.cs" />
+    <Compile Include="FBSComun.Proceso\BaseProcesoVista.cs" />
+    <Compile Include="FBSComun.Proceso\GeneralProcesoPresentador.cs" />
+    <Compile Include="FBSComun.Proceso\GeneralProcesoVista.cs" />
+    <Compile Include="FBSComun.Proceso\GeneralProcesoWorkItem.cs" />
+    <Compile Include="FBSComun.Properties\Resources.cs" />
+    <Compile Include="FBSComun.Properties\Settings.cs" />
+    <Compile Include="FBSComun.SpinningProgress\SpinningProgress.cs" />
+    <Compile Include="FBSComun.Transaccion\BaseTransaccionModuloVista.cs" />
+    <Compile Include="FBSComun.Transaccion\BaseTransaccionVista.cs" />
+    <Compile Include="FBSComun\BaseCertificacionVista.cs" />
+    <Compile Include="FBSComun\BasePresentador.cs" />
+    <Compile Include="FBSComun\BIFFRECORDTYPE.cs" />
+    <Compile Include="FBSComun\BIFFTYPE.cs" />
+    <Compile Include="FBSComun\BusquedaEnArbolForm.cs" />
+    <Compile Include="FBSComun\BusquedaForm.cs" />
+    <Compile Include="FBSComun\CarpetaImagenPersona.cs" />
+    <Compile Include="FBSComun\ContenedorAceptacionForm.cs" />
+    <Compile Include="FBSComun\ContenedorForm.cs" />
+    <Compile Include="FBSComun\DateTimePickerFBS.cs" />
+    <Compile Include="FBSComun\DatosBusquedaEnArbol.cs" />
+    <Compile Include="FBSComun\DecimalTextBoxFBS.cs" />
+    <Compile Include="FBSComun\DECOLOR.cs" />
+    <Compile Include="FBSComun\DetalleContenido_Vista.cs" />
+    <Compile Include="FBSComun\DivisionSimpleVista.cs" />
+    <Compile Include="FBSComun\DropDownGeneral.cs" />
+    <Compile Include="FBSComun\EmpresaParametroDenominacionFija.cs" />
+    <Compile Include="FBSComun\EstadoSistema.cs" />
+    <Compile Include="FBSComun\ExcelDataReader.cs" />
+    <Compile Include="FBSComun\FATMARKERS.cs" />
+    <Compile Include="FBSComun\FBSPrintSettings.cs" />
+    <Compile Include="FBSComun\FORMULAERROR.cs" />
+    <Compile Include="FBSComun\GeneralContenidoVista.cs" />
+    <Compile Include="FBSComun\GeneralPresentador.cs" />
+    <Compile Include="FBSComun\GeneralTabVista.cs" />
+    <Compile Include="FBSComun\GeneralVista.cs" />
+    <Compile Include="FBSComun\GeneralWorkItem.cs" />
+    <Compile Include="FBSComun\ImagenForm.cs" />
+    <Compile Include="FBSComun\InformacionForm.cs" />
+    <Compile Include="FBSComun\IngresoTextoForm.cs" />
+    <Compile Include="FBSComun\Inputbox.cs" />
+    <Compile Include="FBSComun\InvalidHeaderException.cs" />
+    <Compile Include="FBSComun\PrinterStation.cs" />
+    <Compile Include="FBSComun\SortableSearchableList.cs" />
+    <Compile Include="FBSComun\STGTY.cs" />
+    <Compile Include="FBSComun\tbFormats.cs" />
+    <Compile Include="FBSComun\TresDivisionSimpleVista.cs" />
+    <Compile Include="FBSComun\UpdateStatusBar.cs" />
+    <Compile Include="FBSComun\UtilitarioWindows.cs" />
+    <Compile Include="FBSComun\VariableCertificaciones.cs" />
+    <Compile Include="FBSComun\VariablesGenerales.cs" />
+    <Compile Include="FBSComun\XlsBiffBlankCell.cs" />
+    <Compile Include="FBSComun\XlsBiffBOF.cs" />
+    <Compile Include="FBSComun\XlsBiffBoolErrCell.cs" />
+    <Compile Include="FBSComun\XlsBiffBoundSheet.cs" />
+    <Compile Include="FBSComun\XlsBiffContinue.cs" />
+    <Compile Include="FBSComun\XlsBiffDbCell.cs" />
+    <Compile Include="FBSComun\XlsBiffDimensions.cs" />
+    <Compile Include="FBSComun\XlsBiffEOF.cs" />
+    <Compile Include="FBSComun\XlsBiffFormulaCell.cs" />
+    <Compile Include="FBSComun\XlsBiffFormulaString.cs" />
+    <Compile Include="FBSComun\XlsBiffIndex.cs" />
+    <Compile Include="FBSComun\XlsBiffIntegerCell.cs" />
+    <Compile Include="FBSComun\XlsBiffInterfaceHdr.cs" />
+    <Compile Include="FBSComun\XlsBiffLabelCell.cs" />
+    <Compile Include="FBSComun\XlsBiffLabelSSTCell.cs" />
+    <Compile Include="FBSComun\XlsBiffMulBlankCell.cs" />
+    <Compile Include="FBSComun\XlsBiffMulRKCell.cs" />
+    <Compile Include="FBSComun\XlsBiffNumberCell.cs" />
+    <Compile Include="FBSComun\XlsBiffRecord.cs" />
+    <Compile Include="FBSComun\XlsBiffRKCell.cs" />
+    <Compile Include="FBSComun\XlsBiffRow.cs" />
+    <Compile Include="FBSComun\XlsBiffSimpleValueRecord.cs" />
+    <Compile Include="FBSComun\XlsBiffSST.cs" />
+    <Compile Include="FBSComun\XlsBiffStream.cs" />
+    <Compile Include="FBSComun\XlsBiffWindow1.cs" />
+    <Compile Include="FBSComun\XlsDirectoryEntry.cs" />
+    <Compile Include="FBSComun\XlsFat.cs" />
+    <Compile Include="FBSComun\XlsFormattedUnicodeString.cs" />
+    <Compile Include="FBSComun\XlsHeader.cs" />
+    <Compile Include="FBSComun\XlsRootDirectory.cs" />
+    <Compile Include="FBSComun\XlsStream.cs" />
+    <Compile Include="FBSComun\XlsWorkbookGlobals.cs" />
+    <Compile Include="FBSComun\XlsWorksheet.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FBSComun.Busqueda\BaseBusquedaForm.resources" />
+    <EmbeddedResource Include="FBSComun.Busqueda\BaseBusquedaVista.resources" />
+    <EmbeddedResource Include="FBSComun.Busqueda\BaseParaBusquedaVista.resources" />
+    <EmbeddedResource Include="FBSComun.Busqueda\ColorControl.resources" />
+    <EmbeddedResource Include="FBSComun.Busqueda\ImagenesControl.resources" />
+    <EmbeddedResource Include="FBSComun.Busqueda\ListaImagenesForm.resources" />
+    <EmbeddedResource Include="FBSComun.Consulta\BaseDetalleVista.resources" />
+    <EmbeddedResource Include="FBSComun.Consulta\BaseListaVista.resources" />
+    <EmbeddedResource Include="FBSComun.Consulta\GeneralListaDetalleVista.resources" />
+    <EmbeddedResource Include="FBSComun.Consulta\GeneralListaModificadoVista.resources" />
+    <EmbeddedResource Include="FBSComun.Consulta\GeneralListaVista.resources" />
+    <EmbeddedResource Include="FBSComun.Controles\SpeechCheckBox.resources" />
+    <EmbeddedResource Include="FBSComun.Mantenimiento\BaseListaVista.resources" />
+    <EmbeddedResource Include="FBSComun.Mantenimiento\BaseMantenimientoNavegacionVista.resources" />
+    <EmbeddedResource Include="FBSComun.Mantenimiento\BaseMantenimientoVista.resources" />
+    <EmbeddedResource Include="FBSComun.Mantenimiento\GeneralListaDetalleEspecificoTabVista.resources" />
+    <EmbeddedResource Include="FBSComun.Mantenimiento\GeneralListaDetalleEspecificoVista.resources" />
+    <EmbeddedResource Include="FBSComun.Mantenimiento\GeneralListaMantenimientoVista.resources" />
+    <EmbeddedResource Include="FBSComun.Mantenimiento\GeneralMantenimientoTabVista.resources" />
+    <EmbeddedResource Include="FBSComun.Mantenimiento\GeneralMantenimientoVista.resources" />
+    <EmbeddedResource Include="FBSComun.Proceso\BaseProcesoVista.resources" />
+    <EmbeddedResource Include="FBSComun.Proceso\GeneralProcesoVista.resources" />
+    <EmbeddedResource Include="FBSComun.Properties\Resources.resources" />
+    <EmbeddedResource Include="FBSComun.SpinningProgress\SpinningProgress.resources" />
+    <EmbeddedResource Include="FBSComun.Transaccion\BaseTransaccionModuloVista.resources" />
+    <EmbeddedResource Include="FBSComun.Transaccion\BaseTransaccionVista.resources" />
+    <EmbeddedResource Include="FBSComun\BaseCertificacionVista.resources" />
+    <EmbeddedResource Include="FBSComun\BusquedaEnArbolForm.resources" />
+    <EmbeddedResource Include="FBSComun\BusquedaForm.resources" />
+    <EmbeddedResource Include="FBSComun\ContenedorAceptacionForm.resources" />
+    <EmbeddedResource Include="FBSComun\ContenedorForm.resources" />
+    <EmbeddedResource Include="FBSComun\DetalleContenido_Vista.resources" />
+    <EmbeddedResource Include="FBSComun\DivisionSimpleVista.resources" />
+    <EmbeddedResource Include="FBSComun\GeneralContenidoVista.resources" />
+    <EmbeddedResource Include="FBSComun\GeneralTabVista.resources" />
+    <EmbeddedResource Include="FBSComun\GeneralVista.resources" />
+    <EmbeddedResource Include="FBSComun\ImagenForm.resources" />
+    <EmbeddedResource Include="FBSComun\InformacionForm.resources" />
+    <EmbeddedResource Include="FBSComun\IngresoTextoForm.resources" />
+    <EmbeddedResource Include="FBSComun\TresDivisionSimpleVista.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

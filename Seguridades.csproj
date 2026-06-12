@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>1B81EAAC-AA08-4D80-AC54-545B5EB63DCD</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Seguridades</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FBSComun" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Organizaciones" />
+    <Reference Include="System" />
+    <Reference Include="Microsoft.Practices.CompositeUI" />
+    <Reference Include="FBSProxies.Seguridades" />
+    <Reference Include="CustomValidation" />
+    <Reference Include="Personas" />
+    <Reference Include="Microsoft.ReportViewer.WinForms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="FBSProxies.Generales" />
+    <Reference Include="FBSProxies.SeguridadesFBS" />
+    <Reference Include="FBSProxies" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="FBSProxies.Organizaciones" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="LogicStudio.Biometrika.Gateway" />
+    <Reference Include="Generales" />
+    <Reference Include="Microsoft.Practices.CompositeUI.WinForms" />
+    <Reference Include="FBSProxies.Personas" />
+    <Reference Include="FBSProxies.Nomina" />
+    <Reference Include="FBSUtilidades" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Seguridades.Busqueda\FechasForm.cs" />
+    <Compile Include="Seguridades.Busqueda\FechasFormPresentador.cs" />
+    <Compile Include="Seguridades.Busqueda\OficinaUsuarioFechasPresentador.cs" />
+    <Compile Include="Seguridades.Busqueda\OficinaUsuarioFechasVista.cs" />
+    <Compile Include="Seguridades.Busqueda\OficinaUsuarioPresentador.cs" />
+    <Compile Include="Seguridades.Busqueda\OficinaUsuarioVista.cs" />
+    <Compile Include="Seguridades.Busqueda\RolesEstadoVista.cs" />
+    <Compile Include="Seguridades.Busqueda\RolEstadoPresentador.cs" />
+    <Compile Include="Seguridades.Busqueda\RolPresentador.cs" />
+    <Compile Include="Seguridades.Busqueda\RolVista.cs" />
+    <Compile Include="Seguridades.Busqueda\UsuarioFechasPresentador.cs" />
+    <Compile Include="Seguridades.Busqueda\UsuarioFechasVista.cs" />
+    <Compile Include="Seguridades.Busqueda\UsuariosRolPresentador.cs" />
+    <Compile Include="Seguridades.Busqueda\UsuariosRolVista.cs" />
+    <Compile Include="Seguridades.Constantes\EventNames.cs" />
+    <Compile Include="Seguridades.Consulta\General_ListaMantenimientoPresentador.cs" />
+    <Compile Include="Seguridades.Consulta\General_ListaProcesaTabPresentador.cs" />
+    <Compile Include="Seguridades.Consulta\Rol_ListaMantenimientoPresentador.cs" />
+    <Compile Include="Seguridades.Consulta\Rol_ListaVista.cs" />
+    <Compile Include="Seguridades.Consulta\Rol_Presentador.cs" />
+    <Compile Include="Seguridades.Consulta\SeguridadEmpresa_ListaPresentador.cs" />
+    <Compile Include="Seguridades.Consulta\SeguridadEmpresa_ListaVista.cs" />
+    <Compile Include="Seguridades.Consulta\Usuario_ListaMantenimientoPresentador.cs" />
+    <Compile Include="Seguridades.Consulta\Usuario_ListaVista.cs" />
+    <Compile Include="Seguridades.Mantenimiento\Clave_EdicionPresentador.cs" />
+    <Compile Include="Seguridades.Mantenimiento\Clave_Presentador.cs" />
+    <Compile Include="Seguridades.Mantenimiento\Clave_Vista.cs" />
+    <Compile Include="Seguridades.Mantenimiento\EmpresaParametroValidacionSeguridad_Presentador.cs" />
+    <Compile Include="Seguridades.Mantenimiento\EmpresaParametroValidacionSeguridad_Vista.cs" />
+    <Compile Include="Seguridades.Mantenimiento\EmpresaParametro_EdicionPresentador.cs" />
+    <Compile Include="Seguridades.Mantenimiento\EmpresaParametro_NuevoPresentador.cs" />
+    <Compile Include="Seguridades.Mantenimiento\EmpresaParametro_Vista.cs" />
+    <Compile Include="Seguridades.Mantenimiento\General_ListaPresentador.cs" />
+    <Compile Include="Seguridades.Mantenimiento\RolFuncionalidad_Presentador.cs" />
+    <Compile Include="Seguridades.Mantenimiento\RolFuncionalidad_Vista.cs" />
+    <Compile Include="Seguridades.Mantenimiento\RolPresentador_Presentador.cs" />
+    <Compile Include="Seguridades.Mantenimiento\RolPresentador_Vista.cs" />
+    <Compile Include="Seguridades.Mantenimiento\RolUsuario_Presentador.cs" />
+    <Compile Include="Seguridades.Mantenimiento\RolUsuario_Vista.cs" />
+    <Compile Include="Seguridades.Mantenimiento\Rol_EdicionPresentador.cs" />
+    <Compile Include="Seguridades.Mantenimiento\Rol_NuevoPresentador.cs" />
+    <Compile Include="Seguridades.Mantenimiento\Rol_Vista.cs" />
+    <Compile Include="Seguridades.Mantenimiento\UsuarioComplemento_EdicionPresentador.cs" />
+    <Compile Include="Seguridades.Mantenimiento\UsuarioComplemento_NuevoPresentador.cs" />
+    <Compile Include="Seguridades.Mantenimiento\UsuarioComplemento_Vista.cs" />
+    <Compile Include="Seguridades.Mantenimiento\UsuarioEquipoCliente_NavegacionPresentador.cs" />
+    <Compile Include="Seguridades.Mantenimiento\UsuarioEquipoCliente_NavegacionVista.cs" />
+    <Compile Include="Seguridades.Mantenimiento\UsuarioHorarioIngreso_NavegacionPresentador.cs" />
+    <Compile Include="Seguridades.Mantenimiento\UsuarioHorarioIngreso_NavegacionVista.cs" />
+    <Compile Include="Seguridades.Mantenimiento\UsuarioOficinaConsulta_Presentador.cs" />
+    <Compile Include="Seguridades.Mantenimiento\UsuarioOficinaConsulta_Vista.cs" />
+    <Compile Include="Seguridades.Mantenimiento\UsuarioRolTemporal.cs" />
+    <Compile Include="Seguridades.Mantenimiento\UsuarioRolTemporal_AsignacionPresentador.cs" />
+    <Compile Include="Seguridades.Mantenimiento\UsuarioRolTemporal_AsignacionVista.cs" />
+    <Compile Include="Seguridades.Mantenimiento\UsuarioRol_AsignacionPresentador.cs" />
+    <Compile Include="Seguridades.Mantenimiento\UsuarioRol_AsignacionVista.cs" />
+    <Compile Include="Seguridades.Mantenimiento\Usuario_EdicionPresentador.cs" />
+    <Compile Include="Seguridades.Mantenimiento\Usuario_NuevoPresentador.cs" />
+    <Compile Include="Seguridades.Mantenimiento\Usuario_Presentador.cs" />
+    <Compile Include="Seguridades.Mantenimiento\Usuario_Vista.cs" />
+    <Compile Include="Seguridades.Proceso\CambiaClaveEnLotePresentador.cs" />
+    <Compile Include="Seguridades.Proceso\CambiaClaveEnLoteVista.cs" />
+    <Compile Include="Seguridades.Proceso\GeneralPresentador.cs" />
+    <Compile Include="Seguridades.Properties\Resources.cs" />
+    <Compile Include="Seguridades.Properties\Settings.cs" />
+    <Compile Include="Seguridades.Reportes\GlobalPresentador.cs" />
+    <Compile Include="Seguridades.Reportes\OficinaEstadoPresentador_Usuario.cs" />
+    <Compile Include="Seguridades.Reportes\RolesEstadoPresentador.cs" />
+    <Compile Include="Seguridades.Reportes\RolEstado_Vista.cs" />
+    <Compile Include="Seguridades.Reportes\UsuarioPorOficinaEstado_Vista.cs" />
+    <Compile Include="Seguridades.Reportes\UsuarioRolEstadoPresentador.cs" />
+    <Compile Include="Seguridades.Reportes\UsuariosRolEstado_Vista.cs" />
+    <Compile Include="Seguridades.WorkItems\ClaveMantenimiento.cs" />
+    <Compile Include="Seguridades.WorkItems\Instanciador.cs" />
+    <Compile Include="Seguridades.WorkItems\InstanciadorReporte.cs" />
+    <Compile Include="Seguridades.WorkItems\InstanciadorTab.cs" />
+    <Compile Include="Seguridades.WorkItems\ListaConsultaDetalle.cs" />
+    <Compile Include="Seguridades.WorkItems\ListaConsultaDetalleTab.cs" />
+    <Compile Include="Seguridades.WorkItems\ListaMantenimientoDetalle.cs" />
+    <Compile Include="Seguridades.WorkItems\Proceso.cs" />
+    <Compile Include="Seguridades.WorkItems\Reportes.cs" />
+    <Compile Include="Seguridades.WorkItems\RolMantenimiento.cs" />
+    <Compile Include="Seguridades.WorkItems\UsuarioMantenimiento.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Seguridades.Busqueda\FechasForm.resources" />
+    <EmbeddedResource Include="Seguridades.Busqueda\OficinaUsuarioFechasVista.resources" />
+    <EmbeddedResource Include="Seguridades.Busqueda\OficinaUsuarioVista.resources" />
+    <EmbeddedResource Include="Seguridades.Busqueda\RolesEstadoVista.resources" />
+    <EmbeddedResource Include="Seguridades.Busqueda\RolVista.resources" />
+    <EmbeddedResource Include="Seguridades.Busqueda\UsuarioFechasVista.resources" />
+    <EmbeddedResource Include="Seguridades.Busqueda\UsuariosRolVista.resources" />
+    <EmbeddedResource Include="Seguridades.Consulta\Rol_ListaVista.resources" />
+    <EmbeddedResource Include="Seguridades.Consulta\SeguridadEmpresa_ListaVista.resources" />
+    <EmbeddedResource Include="Seguridades.Consulta\Usuario_ListaVista.resources" />
+    <EmbeddedResource Include="Seguridades.Mantenimiento\Clave_Vista.resources" />
+    <EmbeddedResource Include="Seguridades.Mantenimiento\EmpresaParametroValidacionSeguridad_Vista.resources" />
+    <EmbeddedResource Include="Seguridades.Mantenimiento\EmpresaParametro_Vista.resources" />
+    <EmbeddedResource Include="Seguridades.Mantenimiento\RolFuncionalidad_Vista.resources" />
+    <EmbeddedResource Include="Seguridades.Mantenimiento\RolPresentador_Vista.resources" />
+    <EmbeddedResource Include="Seguridades.Mantenimiento\RolUsuario_Vista.resources" />
+    <EmbeddedResource Include="Seguridades.Mantenimiento\Rol_Vista.resources" />
+    <EmbeddedResource Include="Seguridades.Mantenimiento\UsuarioComplemento_Vista.resources" />
+    <EmbeddedResource Include="Seguridades.Mantenimiento\UsuarioEquipoCliente_NavegacionVista.resources" />
+    <EmbeddedResource Include="Seguridades.Mantenimiento\UsuarioHorarioIngreso_NavegacionVista.resources" />
+    <EmbeddedResource Include="Seguridades.Mantenimiento\UsuarioOficinaConsulta_Vista.resources" />
+    <EmbeddedResource Include="Seguridades.Mantenimiento\UsuarioRolTemporal_AsignacionVista.resources" />
+    <EmbeddedResource Include="Seguridades.Mantenimiento\UsuarioRol_AsignacionVista.resources" />
+    <EmbeddedResource Include="Seguridades.Mantenimiento\Usuario_Vista.resources" />
+    <EmbeddedResource Include="Seguridades.Proceso\CambiaClaveEnLoteVista.resources" />
+    <EmbeddedResource Include="Seguridades.Properties\Resources.resources" />
+    <EmbeddedResource Include="Seguridades.Reportes\RolEstado_Report.rdlc" />
+    <EmbeddedResource Include="Seguridades.Reportes\RolEstado_Vista.resources" />
+    <EmbeddedResource Include="Seguridades.Reportes\UsuarioPorOficinaEstado_Report.rdlc" />
+    <EmbeddedResource Include="Seguridades.Reportes\UsuarioPorOficinaEstado_Vista.resources" />
+    <EmbeddedResource Include="Seguridades.Reportes\UsuarioRolEstado_Report.rdlc" />
+    <EmbeddedResource Include="Seguridades.Reportes\UsuariosRolEstado_Vista.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

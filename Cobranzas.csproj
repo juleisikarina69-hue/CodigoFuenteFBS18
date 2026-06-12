@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>A24127DE-E8F0-43D6-9960-105BDA650B4D</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Cobranzas</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="FBSComun" />
+    <Reference Include="System" />
+    <Reference Include="Microsoft.ReportViewer.WinForms" />
+    <Reference Include="Microsoft.Practices.CompositeUI" />
+    <Reference Include="FBSProxies.Cobranzas" />
+    <Reference Include="CustomValidation" />
+    <Reference Include="FBSProxies.Credito" />
+    <Reference Include="FBSProxies.Cartera" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Clientes" />
+    <Reference Include="FBSProxies" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="Microsoft.Practices.CompositeUI.WinForms" />
+    <Reference Include="FBSProxies.Organizaciones" />
+    <Reference Include="FBSProxies.Generales" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="FBSProxies.Seguridades" />
+    <Reference Include="Distribuidos" />
+    <Reference Include="FBSProxies.Contabilidades" />
+    <Reference Include="Personas" />
+    <Reference Include="FBSProxies.Personas" />
+    <Reference Include="FBSUtilidades" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cobranzas.Busqueda\EntregaRecuperacionAbogados_Vista.cs" />
+    <Compile Include="Cobranzas.Busqueda\NotificacionBusqueda_Vista.cs" />
+    <Compile Include="Cobranzas.Consulta\Abogado_ListaPresentador.cs" />
+    <Compile Include="Cobranzas.Consulta\Abogado_ListaVista.cs" />
+    <Compile Include="Cobranzas.Consulta\Accion_ListaMantenimientoPresentador.cs" />
+    <Compile Include="Cobranzas.Consulta\Accion_ListaVista.cs" />
+    <Compile Include="Cobranzas.Consulta\General_ListaMantenimientoPresentador.cs" />
+    <Compile Include="Cobranzas.Consulta\General_ListaProcesaTabPresentador.cs" />
+    <Compile Include="Cobranzas.Consulta\PrestamoInformacionAdicional_Presentador.cs" />
+    <Compile Include="Cobranzas.Consulta\PrestamoInformacionAdicional_Vista.cs" />
+    <Compile Include="Cobranzas.Consulta\PrestamoPorClienteParaRegistroCastigado_ListaPresentador.cs" />
+    <Compile Include="Cobranzas.Consulta\PrestamoPorClienteParaRegistroJudicial_ListaPresentador.cs" />
+    <Compile Include="Cobranzas.Consulta\PrestamoPorCliente_ListaVista.cs" />
+    <Compile Include="Cobranzas.Consulta\RecuperacionCarteraNotificacion_ListaPresentador.cs" />
+    <Compile Include="Cobranzas.Consulta\RecuperacionCarteraNotificacion_ListaVista.cs" />
+    <Compile Include="Cobranzas.Consulta\RecuperacionCartera_Presentador.cs" />
+    <Compile Include="Cobranzas.Consulta\RecuperacionCartera_Vista.cs" />
+    <Compile Include="Cobranzas.Consulta\SeguimientoPorPrestamoFechasGeneracion_ListaPresentador.cs" />
+    <Compile Include="Cobranzas.Consulta\SeguimientoPorPrestamoFechasGeneracion_ListaVista.cs" />
+    <Compile Include="Cobranzas.Consulta\TipoCompromiso_ListaMantenimientoPresentador.cs" />
+    <Compile Include="Cobranzas.Consulta\TipoCompromiso_ListaVista.cs" />
+    <Compile Include="Cobranzas.Consulta\TipoNotificacion_ListaMantenimientoPresentador.cs" />
+    <Compile Include="Cobranzas.Consulta\TipoNotificacion_ListaVista.cs" />
+    <Compile Include="Cobranzas.Consulta\TipoPrestamoCreditoLista_Vista.cs" />
+    <Compile Include="Cobranzas.Consulta\TipoPrestamoCreditoParametros_Presentador.cs" />
+    <Compile Include="Cobranzas.Mantenimiento\Abogado_EdicionPresentador.cs" />
+    <Compile Include="Cobranzas.Mantenimiento\Abogado_NuevoPresentador.cs" />
+    <Compile Include="Cobranzas.Mantenimiento\Abogado_Vista.cs" />
+    <Compile Include="Cobranzas.Mantenimiento\Accion_EdicionPresentador.cs" />
+    <Compile Include="Cobranzas.Mantenimiento\Accion_NuevoPresentador.cs" />
+    <Compile Include="Cobranzas.Mantenimiento\Accion_Vista.cs" />
+    <Compile Include="Cobranzas.Mantenimiento\CompromisoPago_NavegacionPresentador.cs" />
+    <Compile Include="Cobranzas.Mantenimiento\CompromisoPago_NavegacionVista.cs" />
+    <Compile Include="Cobranzas.Mantenimiento\General_ListaPresentador.cs" />
+    <Compile Include="Cobranzas.Mantenimiento\Gestion_DesdeSeguimientoNavegacionPresentador.cs" />
+    <Compile Include="Cobranzas.Mantenimiento\Gestion_NavegacionVista.cs" />
+    <Compile Include="Cobranzas.Mantenimiento\Seguimiento_EdicionPresentador.cs" />
+    <Compile Include="Cobranzas.Mantenimiento\Seguimiento_Vista.cs" />
+    <Compile Include="Cobranzas.Mantenimiento\SeleccionOficinaItem.cs" />
+    <Compile Include="Cobranzas.Mantenimiento\TipoCompromiso_EdicionPresentador.cs" />
+    <Compile Include="Cobranzas.Mantenimiento\TipoCompromiso_NuevoPresentador.cs" />
+    <Compile Include="Cobranzas.Mantenimiento\TipoCompromiso_Vista.cs" />
+    <Compile Include="Cobranzas.Mantenimiento\TipoNotificacionTipoPrestamo_Presentador.cs" />
+    <Compile Include="Cobranzas.Mantenimiento\TipoNotificacionTipoPrestamo_Vista.cs" />
+    <Compile Include="Cobranzas.Mantenimiento\TipoNotificacion_EdicionPresentador.cs" />
+    <Compile Include="Cobranzas.Mantenimiento\TipoNotificacion_NuevoPresentador.cs" />
+    <Compile Include="Cobranzas.Mantenimiento\TipoNotificacion_Vista.cs" />
+    <Compile Include="Cobranzas.Proceso\General_ProcesoPresentador.cs" />
+    <Compile Include="Cobranzas.Proceso\RegistraPrestamoAbogadoPresentador.cs" />
+    <Compile Include="Cobranzas.Proceso\RegistraPrestamoAbogadoVista.cs" />
+    <Compile Include="Cobranzas.Proceso\RegistraPrestamoCastigadoPresentador.cs" />
+    <Compile Include="Cobranzas.Proceso\RegistraPrestamoCastigadoVista.cs" />
+    <Compile Include="Cobranzas.Proceso\SeguimientoAsignacionUsuariosPresentador.cs" />
+    <Compile Include="Cobranzas.Proceso\SeguimientoAsignacionUsuariosVista.cs" />
+    <Compile Include="Cobranzas.Proceso\SeguimientoGeneracionPorOficinaPresentador.cs" />
+    <Compile Include="Cobranzas.Proceso\SeguimientoGeneracionPorOficinaVista.cs" />
+    <Compile Include="Cobranzas.Properties\Resources.cs" />
+    <Compile Include="Cobranzas.Properties\Settings.cs" />
+    <Compile Include="Cobranzas.Reportes\EntregaRecuperacionAbogadosVista.cs" />
+    <Compile Include="Cobranzas.Reportes\EntregaRecuperacionAbogados_Presentador.cs" />
+    <Compile Include="Cobranzas.Reportes\GlobalPresentador.cs" />
+    <Compile Include="Cobranzas.Reportes\NotificacionAviso_UrocalVista.cs" />
+    <Compile Include="Cobranzas.Reportes\NotificacionBusquedaEnLote_Presentador.cs" />
+    <Compile Include="Cobranzas.Reportes\NotificacionBusqueda_Presentador.cs" />
+    <Compile Include="Cobranzas.Reportes\NotificacionCitacionAbogado_UrocalVista.cs" />
+    <Compile Include="Cobranzas.Reportes\NotificacionElSagrario_Vista.cs" />
+    <Compile Include="Cobranzas.Reportes\NotificacionExtraJudicialHipotecarioLuchaCampesina_Vista.cs" />
+    <Compile Include="Cobranzas.Reportes\NotificacionExtrajudicialLuchaCampesina_Vista.cs" />
+    <Compile Include="Cobranzas.Reportes\NotificacionKullki_Vista.cs" />
+    <Compile Include="Cobranzas.Reportes\NotificacionLaMana_Vista.cs" />
+    <Compile Include="Cobranzas.Reportes\NotificacionLista_Vista.cs" />
+    <Compile Include="Cobranzas.Reportes\NotificacionPreJudicialElSagrario_Vista.cs" />
+    <Compile Include="Cobranzas.Reportes\NotificacionPreJudicialLaMana_Vista.cs" />
+    <Compile Include="Cobranzas.Reportes\ParrafosNotificaciones.cs" />
+    <Compile Include="Cobranzas.Reportes\RecuperacionCarteraElSagrario_Vista.cs" />
+    <Compile Include="Cobranzas.Reportes\ResumenNotificacionPrestamoConOpcionImprimir.cs" />
+    <Compile Include="Cobranzas.WorkItems\Instanciador.cs" />
+    <Compile Include="Cobranzas.WorkItems\InstanciadorProceso.cs" />
+    <Compile Include="Cobranzas.WorkItems\InstanciadorReporte.cs" />
+    <Compile Include="Cobranzas.WorkItems\InstanciadorTab.cs" />
+    <Compile Include="Cobranzas.WorkItems\ListaConsultaDetalle.cs" />
+    <Compile Include="Cobranzas.WorkItems\ListaConsultaDetalleTab.cs" />
+    <Compile Include="Cobranzas.WorkItems\ListaMantenimientoDetalle.cs" />
+    <Compile Include="Cobranzas.WorkItems\Proceso.cs" />
+    <Compile Include="Cobranzas.WorkItems\RecuperacionCarteraNotificacion.cs" />
+    <Compile Include="Cobranzas.WorkItems\Reportes.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cobranzas.Busqueda\EntregaRecuperacionAbogados_Vista.resources" />
+    <EmbeddedResource Include="Cobranzas.Busqueda\NotificacionBusqueda_Vista.resources" />
+    <EmbeddedResource Include="Cobranzas.Consulta\Abogado_ListaVista.resources" />
+    <EmbeddedResource Include="Cobranzas.Consulta\Accion_ListaVista.resources" />
+    <EmbeddedResource Include="Cobranzas.Consulta\PrestamoInformacionAdicional_Vista.resources" />
+    <EmbeddedResource Include="Cobranzas.Consulta\PrestamoPorCliente_ListaVista.resources" />
+    <EmbeddedResource Include="Cobranzas.Consulta\RecuperacionCarteraNotificacion_ListaVista.resources" />
+    <EmbeddedResource Include="Cobranzas.Consulta\RecuperacionCartera_Vista.resources" />
+    <EmbeddedResource Include="Cobranzas.Consulta\SeguimientoPorPrestamoFechasGeneracion_ListaVista.resources" />
+    <EmbeddedResource Include="Cobranzas.Consulta\TipoCompromiso_ListaVista.resources" />
+    <EmbeddedResource Include="Cobranzas.Consulta\TipoNotificacion_ListaVista.resources" />
+    <EmbeddedResource Include="Cobranzas.Consulta\TipoPrestamoCreditoLista_Vista.resources" />
+    <EmbeddedResource Include="Cobranzas.Mantenimiento\Abogado_Vista.resources" />
+    <EmbeddedResource Include="Cobranzas.Mantenimiento\Accion_Vista.resources" />
+    <EmbeddedResource Include="Cobranzas.Mantenimiento\CompromisoPago_NavegacionVista.resources" />
+    <EmbeddedResource Include="Cobranzas.Mantenimiento\Gestion_NavegacionVista.resources" />
+    <EmbeddedResource Include="Cobranzas.Mantenimiento\Seguimiento_Vista.resources" />
+    <EmbeddedResource Include="Cobranzas.Mantenimiento\TipoCompromiso_Vista.resources" />
+    <EmbeddedResource Include="Cobranzas.Mantenimiento\TipoNotificacionTipoPrestamo_Vista.resources" />
+    <EmbeddedResource Include="Cobranzas.Mantenimiento\TipoNotificacion_Vista.resources" />
+    <EmbeddedResource Include="Cobranzas.Proceso\RegistraPrestamoAbogadoVista.resources" />
+    <EmbeddedResource Include="Cobranzas.Proceso\RegistraPrestamoCastigadoVista.resources" />
+    <EmbeddedResource Include="Cobranzas.Proceso\SeguimientoAsignacionUsuariosVista.resources" />
+    <EmbeddedResource Include="Cobranzas.Proceso\SeguimientoGeneracionPorOficinaVista.resources" />
+    <EmbeddedResource Include="Cobranzas.Properties\Resources.resources" />
+    <EmbeddedResource Include="Cobranzas.Reportes\EntregaRecuperacionAbogadosReport.rdlc" />
+    <EmbeddedResource Include="Cobranzas.Reportes\EntregaRecuperacionAbogadosVista.resources" />
+    <EmbeddedResource Include="Cobranzas.Reportes\NotificacionAviso_UrocalReport.rdlc" />
+    <EmbeddedResource Include="Cobranzas.Reportes\NotificacionAviso_UrocalVista.resources" />
+    <EmbeddedResource Include="Cobranzas.Reportes\NotificacionCitacionAbogado_UrocalReport.rdlc" />
+    <EmbeddedResource Include="Cobranzas.Reportes\NotificacionCitacionAbogado_UrocalVista.resources" />
+    <EmbeddedResource Include="Cobranzas.Reportes\NotificacionElSagrarioReport.rdlc" />
+    <EmbeddedResource Include="Cobranzas.Reportes\NotificacionElSagrario_Vista.resources" />
+    <EmbeddedResource Include="Cobranzas.Reportes\NotificacionExtrajudicialHipotecarioLuchaCampesina_Report.rdlc" />
+    <EmbeddedResource Include="Cobranzas.Reportes\NotificacionExtraJudicialHipotecarioLuchaCampesina_Vista.resources" />
+    <EmbeddedResource Include="Cobranzas.Reportes\NotificacionExtraJudicialLuchaCampesina_Report.rdlc" />
+    <EmbeddedResource Include="Cobranzas.Reportes\NotificacionExtrajudicialLuchaCampesina_Vista.resources" />
+    <EmbeddedResource Include="Cobranzas.Reportes\NotificacionKullkiReport.rdlc" />
+    <EmbeddedResource Include="Cobranzas.Reportes\NotificacionKullki_Vista.resources" />
+    <EmbeddedResource Include="Cobranzas.Reportes\NotificacionLaManaReport.rdlc" />
+    <EmbeddedResource Include="Cobranzas.Reportes\NotificacionLaMana_Vista.resources" />
+    <EmbeddedResource Include="Cobranzas.Reportes\NotificacionLista_Vista.resources" />
+    <EmbeddedResource Include="Cobranzas.Reportes\NotificacionPreJudicialElSagrarioGarantesReport.rdlc" />
+    <EmbeddedResource Include="Cobranzas.Reportes\NotificacionPreJudicialElSagrarioReport.rdlc" />
+    <EmbeddedResource Include="Cobranzas.Reportes\NotificacionPreJudicialElSagrario_Vista.resources" />
+    <EmbeddedResource Include="Cobranzas.Reportes\NotificacionPreJudicialLaMana_Report.rdlc" />
+    <EmbeddedResource Include="Cobranzas.Reportes\NotificacionPreJudicialLaMana_Vista.resources" />
+    <EmbeddedResource Include="Cobranzas.Reportes\RecuperacionCarteraElSagrario_Vista.resources" />
+    <EmbeddedResource Include="Cobranzas.Reportes\RecuperacionCartera_Report.rdlc" />
+    <EmbeddedResource Include="Cobranzas.Reportes\RESPALDO NotificacionElSagrarioReport.rdlc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
